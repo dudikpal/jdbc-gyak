@@ -9,7 +9,7 @@ import java.sql.SQLException;
 @Configuration
 public class Config {
 
-    private static MariaDbDataSource ds;
+
 
     @Bean
     public Flyway flyway() {
@@ -23,7 +23,7 @@ public class Config {
 
     @Bean
     public MariaDbDataSource dataSource()  {
-        ds = new MariaDbDataSource();
+        MariaDbDataSource ds = new MariaDbDataSource();
 
         try {
             ds.setUrl("jdbc:mariadb://localhost:3308/employees?useUnicode=true");

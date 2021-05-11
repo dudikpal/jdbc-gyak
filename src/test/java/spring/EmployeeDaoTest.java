@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @ContextConfiguration(classes = {Config.class})
 public class EmployeeDaoTest {
 
-
     @Autowired
     private Flyway flyway;
 
